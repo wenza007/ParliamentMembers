@@ -15,7 +15,7 @@ interface MPFormProps {
 const MPForm = ({ onSubmit, defaultValues, onCancel, onBack, isReadOnly }: MPFormProps) => {
   const [photoUploadType, setPhotoUploadType] = useState<'url' | 'upload'>('url');
   
-  const { register, handleSubmit, reset, setValue, watch, formState: { errors } } = useForm<MPFormData>({
+  const { register, handleSubmit, reset, watch, formState: { errors } } = useForm<MPFormData>({
     resolver: zodResolver(MPSchema),
     defaultValues: { ...defaultValues }
   });
