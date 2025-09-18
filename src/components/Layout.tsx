@@ -12,11 +12,8 @@ const Layout = ({ children }: LayoutProps) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <header className="text-center mb-10">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2 drop-shadow-md">
-            ฐานข้อมูล ส.ส.
+            ทำเนียบรายชื่อสมาชิกสภาผู้แทนราษฏร
           </h1>
-          <p className="text-lg text-gray-600 font-light">
-            ระบบจัดการข้อมูลสมาชิกสภาผู้แทนราษฎร
-          </p>
         </header>
         <main className="bg-white p-6 md:p-10 rounded-3xl shadow-2xl">
           {children}
