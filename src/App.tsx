@@ -10,6 +10,9 @@ function App() {
     const savedMps = localStorage.getItem('mps');
     return savedMps ? JSON.parse(savedMps) : [];
   });
+  useEffect(() => {
+  localStorage.setItem('mps', JSON.stringify(mps));
+}, [mps]);
   const [editingMp, setEditingMp] = useState<MPFormData | undefined>(undefined);
   const [viewingMp, setViewingMp] = useState<MPFormData | undefined>(undefined);
   const [showForm, setShowForm] = useState(true);
